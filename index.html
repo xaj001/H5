@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (min-width:1200px){
+            .bg {
+                display: flex;
+            }
+            .bg div{
+                height: 60px;
+                font-size: 30px;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+            }
+            .bg>div:nth-child(1){
+                flex-grow: 1;
+                background-color: red;
+            }
+            .bg>div:nth-child(2){
+                flex-grow: 1;
+                background-color: blue;
+            }
+            .bg>div:nth-child(3){
+                flex-grow: 1;
+                background-color: black;
+            }
+            .bg>div:nth-child(4){
+                flex-grow: 1;
+                background-color: orange;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1200px){
+            .bg {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .bg div{
+                height: 60px;
+                font-size: 30px;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+            }
+            .bg>div:nth-child(1){
+                width: 1200px;
+                background-color: red;
+            }
+            .bg>div:nth-child(2){
+                flex-grow: 1;
+                background-color: blue;
+            }
+            .bg>div:nth-child(3){
+                flex-grow: 1;
+                background-color: black;
+            }
+            .bg>div:nth-child(4){
+                flex-grow: 1;
+                background-color: orange;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:992px){
+            .bg {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .bg div{
+                width: 384px;
+                height: 60px;
+                font-size: 30px;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+            }
+            .bg>div:nth-child(1){
+                flex-grow: 1;
+                background-color: red;
+            }
+            .bg>div:nth-child(2){
+                flex-grow: 1;
+                background-color: blue;
+            }
+            .bg>div:nth-child(3){
+                flex-grow: 1;
+                background-color: black;
+            }
+            .bg>div:nth-child(4){
+                flex-grow: 1;
+                background-color: orange;
+            }
+        }
+        @media screen and (max-width:768px){
+            .bg div{
+                height: 60px;
+                font-size: 30px;
+                text-align: center;
+                line-height: 60px;
+                color: white;
+            }
+            .bg>div:nth-child(1){
+                background-color: red;
+            }
+            .bg>div:nth-child(2){
+                background-color: blue;
+            }
+            .bg>div:nth-child(3){
+                background-color: black;
+            }
+            .bg>div:nth-child(4){
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
